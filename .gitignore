@@ -1,0 +1,5 @@
+env/
+.vscode/
+images/
+metadata/
+images-resized/

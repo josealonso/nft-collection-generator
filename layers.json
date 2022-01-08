@@ -1,0 +1,75 @@
+{
+    "background": [
+        {
+            "name": "orange",
+            "fileName": "orange.png",
+            "weight": 30
+        },
+        {
+            "name": "purple",
+            "fileName": "purple.png",
+            "weight": 20
+        },
+        {
+            "name": "red",
+            "fileName": "red.png",
+            "weight": 50
+        }
+    ],
+    "body": [
+        {
+            "name": "dark",
+            "fileName": "dark.png",
+            "weight": 70
+        },
+        {
+            "name": "red",
+            "fileName": "red.png",
+            "weight": 20
+        },
+        {
+            "name": "zombie",
+            "fileName": "zombie.png",
+            "weight": 10
+        }
+    ],
+    "eye": [
+        {
+            "name": "big blue",
+            "fileName": "big-blue.png",
+            "weight": 25
+        },
+        {
+            "name": "big green",
+            "fileName": "big-green.png",
+            "weight": 25
+        },
+        {
+            "name": "blue dots",
+            "fileName": "blue-dots.png",
+            "weight": 25
+        },
+        {
+            "name": "green dots",
+            "fileName": "green-dots.png",
+            "weight": 25
+        }
+    ],
+    "horn": [
+        {
+            "name": "demon",
+            "fileName": "demon.png",
+            "weight": 10
+        },
+        {
+            "name": "standing",
+            "fileName": "standing.png",
+            "weight": 30
+        },
+        {
+            "name": "little",
+            "fileName": "little.png",
+            "weight": 60
+        }
+    ]
+}
