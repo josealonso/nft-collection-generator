@@ -1,9 +1,9 @@
 # NFT collection generator
 Generates layered images, whole collections. Provides additional functionality.
 ## Repository includes three scripts
-- [generate.py](#generate.py "generatepy")
-- [resize.py](#resize.py "resizepy")
-- [change_url.py](#change_url.py "change_urlpy")
+- [generate.py](#generatepy "generate.py")
+- [resize.py](#resizepy "resize.py")
+- [change_url.py](#change_urlpy "change_url.py")
 
 ## Installation
 ```
