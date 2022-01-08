@@ -36,6 +36,7 @@ PATH_TO_METADATA=./metadata
 }
 ```
 Main JSON objects like `first-layer` should equal folders inside `./layers` and objects names will equal attributes names in metadata files.
+
 **Note**:  sum of wheights inside one main object should equal 100
 
 ### Run
