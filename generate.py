@@ -13,8 +13,9 @@ def generate_image(data: dict) -> dict:
     """
     image = {}
     for layer in data:
-        image[layer] = random.choices([x["name"] for x in data[layer]], [
-                                      x["weight"] for x in data[layer]])[0]
+        image[layer] = random.choices(
+            [item["name"] for item in data[layer]], [item["weight"] for item in data[layer]]
+        )[0]
     return image
 
 
@@ -26,14 +27,13 @@ def save_image(data: dict, image: dict, image_id: int):
     for layer in image:
         for item in data[layer]:
             if item["name"] == image[layer]:
-                path = PATH_TO_LAYERS+"/{}/{}".format(layer, item["fileName"])
+                path = PATH_TO_LAYERS + "/{}/{}".format(layer, item["fileName"])
                 paths.append(path)
                 break
     image_file = Image.open(paths[0]).convert("RGBA")
     for path in paths[1:]:
-        image_file = Image.alpha_composite(
-            image_file, Image.open(path).convert("RGBA"))
-    image_file.save(PATH_TO_IMAGES+"/{}.png".format(image_id))
+        image_file = Image.alpha_composite(image_file, Image.open(path).convert("RGBA"))
+    image_file.save(PATH_TO_IMAGES + "/{}.png".format(image_id))
 
 
 def save_metadata(image: dict, image_id: int):
@@ -41,13 +41,13 @@ def save_metadata(image: dict, image_id: int):
     Сombines layers of the image to one json metadata and saves the final file
     """
     metadata = {
-        "image": URL_TO_IMAGE + "/" + str(image_id) + '.png',
-        "name": NAME + ' #' + str(image_id),
-        "attributes": []
+        "image": URL_TO_IMAGE + "/" + str(image_id) + ".png",
+        "name": NAME + " #" + str(image_id),
+        "attributes": [],
     }
     for layer in image:
         metadata["attributes"].append({layer: image[layer]})
-    with open(PATH_TO_METADATA + '/' + str(image_id) + ".json", 'w') as file:
+    with open(PATH_TO_METADATA + "/" + str(image_id) + ".json", "w") as file:
         json.dump(metadata, file, indent=2)
 
 
@@ -65,7 +65,8 @@ def main():
     if sum < COLLECTION_SIZE:
         raise Exception(
             "Too small files quantity to create a collection with size "
-            + str(COLLECTION_SIZE))
+            + str(COLLECTION_SIZE)
+        )
 
     # get data from layers.json
     with open(PATH_TO_JSON) as file:
