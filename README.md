@@ -45,7 +45,7 @@ python generate.py
 ```
 
 ## resize.py
-This script scales your images. Marketplace doesn't display small images like 12 pixels images correctly.
+This script scales your images. Marketplaces don't display small images correctly.
 ### Set environment variables in .env file
 ```bash
 PATH_TO_IMAGES=./images
