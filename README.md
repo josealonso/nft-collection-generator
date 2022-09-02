@@ -55,7 +55,7 @@ PATH_TO_RESIZED_IMAGES=./images-resized
 OUTPUT_IMAGE_SIZE_X=576
 OUTPUT_IMAGE_SIZE_Y=576
 ```
-###Run
+### Run
 ```
 python resize.py
 ```
