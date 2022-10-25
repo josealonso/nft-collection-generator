@@ -71,6 +71,7 @@ PATH_TO_METADATA=./metadata
 ```bash
 python change_url.py
 ```
+test
 ## License
 
 Usage is provided under the [MIT License](opensource.org/licenses/mit-license.php). See LICENSE for the full details.
